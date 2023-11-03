@@ -1,0 +1,16 @@
+Code,Nom,Section,Coefficient,Semestre
+001,Algebre1,Cycle preparatoire integre (CPI),1.5,S1
+002,Analyse1,Cycle preparatoire integre (CPI),1.5,S1
+010,System d'exploitation,Cycle preparatoire integre (CPI),1,S1
+003,Analyse2,Cycle preparatoire integre (CPI),1.5,S2
+004,Algebre2,Cycle preparatoire integre (CPI),1.5,S2
+005,Event-B,Cycle preparatoire integre (CPI),1.5,S2
+006,Python,Cycle preparatoire integre (CPI),1.5,S2
+007,Python,Licence en sciences de l informatique (L-I),1.5,S2
+011,System d'exploitation,Licence en sciences de l informatique (L-I),1,S1
+008,Stat,Licence en mathematiques appliquee (L-M),2,S1
+009,Logique Formel,Mastere professionnel en genie logiciel (MP-GL),1,S1
+014,Anglais,Mastere professionnel en genie logiciel (MP-GL),1,S1
+015,Francais Formel,Mastere professionnel en genie logiciel (MP-GL),1,S1
+012,Java,Licence en sciences de l informatique (L-I),2,S2
+013,Java2,Cycle preparatoire integre (CPI),2,S2

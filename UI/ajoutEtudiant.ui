@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:grey;</string>
+  </property>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgba(46,82,101,255);
+background-color:rgba(0,0,0,0);
+</string>
+   </property>
+   <property name="text">
+    <string>Ajout Etudiant</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>170</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Numéro inscription</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>240</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Nom</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>240</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Prénom</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>320</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Adresse</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>410</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Mail</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>410</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Téléphone</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>320</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(0,0,0);
+padding-bottom:7px;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>550</y>
+     <width>250</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(255, 255, 255);
+padding-bottom:7px;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Cycle préparatoire intégré (CPI)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Licence en sciences de l’informatique (L-I)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Licence en mathématiques appliquée (L-M)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mastère de recherche en génie logiciel (MR-GL)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mastère professionnel en génie logiciel (MP-GL)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diplôme national d'ingénieur en électronique (ING)</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>500</y>
+     <width>161</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+color:rgb(104, 121, 143);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Niveau étude :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>500</y>
+     <width>161</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+color:rgb(104, 121, 143);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Section :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>320</y>
+     <width>161</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(104, 121, 143);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Date de naissance:</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1121</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/img/897.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>660</y>
+      <width>150</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>87</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background: #FFFFFF;
+  border: 0 solid #E2E8F0;
+  color: #1A202C;
+  font-size: 12px;
+  font-weight: 700;
+  height: 56px;
+  border-radius: 8px;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ajouter</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>550</y>
+      <width>250</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(255, 255, 255);
+padding-bottom:7px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1ére année</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2eme année</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3eme année</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label_10</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>lineEdit_3</zorder>
+  <zorder>lineEdit_4</zorder>
+  <zorder>lineEdit_5</zorder>
+  <zorder>lineEdit_6</zorder>
+  <zorder>dateEdit</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+ </widget>
+ <resources>
+  <include location="../img/back.qrc"/>
+ </resources>
+ <connections/>
+</ui>

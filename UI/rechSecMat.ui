@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1121</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-150</y>
+     <width>1131</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image:url(:/img/897.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>10</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgba(46,82,101,255);
+background-color:rgba(0,0,0,0);
+</string>
+   </property>
+   <property name="text">
+    <string>Recherche par Section</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>1081</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0);
+border:none;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>100</y>
+     <width>150</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>87</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(255,255,255);
+background: rgba(46,82,101,255);
+  border: 0 solid #E2E8F0;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 700;
+  height: 56px;
+  border-radius: 8px;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>111</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+color:rgb(104, 121, 143);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Section :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>261</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(0,0,0,0);
+border: 2px solid rgba(0,0,0,0);
+border-bottom-color:rgba(46,82,101,255);
+color:rgb(104, 121, 143);
+padding-bottom:7px;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Cycle preparatoire integre (CPI)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Licence en sciences de l informatique (L-I)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Licence en mathematiques appliquee (L-M)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mastere de recherche en genie logiciel (MR-GL)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mastere professionnel en genie logiciel (MP-GL)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diplome national d ingenieur en electronique (ING)</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../img/back.qrc"/>
+ </resources>
+ <connections/>
+</ui>

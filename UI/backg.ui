@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1118</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-20</y>
+       <width>1120</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image:url(:/img/Background.jpg)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1118</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGestion_des_etudiants">
+    <property name="title">
+     <string>Gestion des etudiants</string>
+    </property>
+    <widget class="QMenu" name="menuMise_a_jour_des_etudiants">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer_etudiant">
+      <property name="title">
+       <string>Supprimer etudiant</string>
+      </property>
+      <addaction name="actionEtudiant_donne"/>
+      <addaction name="actionD_une_section_donn_e"/>
+      <addaction name="actionD_un_niveau_donn"/>
+      <addaction name="actionD_une_section_et_un_niveau"/>
+     </widget>
+     <widget class="QMenu" name="menuModifier_etudiant">
+      <property name="title">
+       <string>Modifier etudiant</string>
+      </property>
+      <addaction name="actionT_l_phone"/>
+      <addaction name="actionMail"/>
+      <addaction name="actionAdresse"/>
+     </widget>
+     <addaction name="actionAjouter_etudiant"/>
+     <addaction name="menuSupprimer_etudiant"/>
+     <addaction name="menuModifier_etudiant"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_tudiants"/>
+     <addaction name="actionRecherche_par_num_ro"/>
+     <addaction name="actionRecherche_par_section"/>
+     <addaction name="actionRecherche_par_section_et_niveau"/>
+     <addaction name="actionRecherche_par_niveau"/>
+    </widget>
+    <addaction name="menuMise_a_jour_des_etudiants"/>
+    <addaction name="menuRecherche_et_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_mati_res">
+    <property name="title">
+     <string>Gestion des matières</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_une_mati_re">
+      <property name="title">
+       <string>Modifier une matière</string>
+      </property>
+      <addaction name="actionNom"/>
+      <addaction name="actionCoefficient"/>
+     </widget>
+     <addaction name="actionAjouter_mati_re"/>
+     <addaction name="actionSupprimer_un_mati_re"/>
+     <addaction name="menuModifier_une_mati_re"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage_2">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_mati_res"/>
+     <addaction name="actionRecherche_par_code"/>
+     <addaction name="actionRecherche_par_section_2"/>
+     <addaction name="actionRecherche_par_section_et_semestre"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="menuRecherche_et_Affichage_2"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_notes">
+    <property name="title">
+     <string>Gestion des notes</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_2">
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <addaction name="actionAjouter_une_note"/>
+     <addaction name="actionSupprimer_une_note"/>
+     <addaction name="actionModifier_une_note"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage_3">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_notes"/>
+     <addaction name="actionRecherche_par_num_ro_inscription"/>
+     <addaction name="actionRecherche_par_num_ro_inscription_et_semestre"/>
+    </widget>
+    <addaction name="menuMise_jour_2"/>
+    <addaction name="menuRecherche_et_Affichage_3"/>
+   </widget>
+   <widget class="QMenu" name="menuCalcul_et_Affichage">
+    <property name="title">
+     <string>Calcul et Affichage</string>
+    </property>
+    <addaction name="actionBulletin_de_note_d_un_tudiant"/>
+    <addaction name="actionBulletin_de_note_d_un_tudiant_par_semestre"/>
+    <addaction name="actionEtudiants_admis_d_une_section_donn_e"/>
+    <addaction name="actionEtudiants_redoublants_d_une_section_donn_e"/>
+    <addaction name="actionEtudiants_admis_de_L_ISIMM"/>
+    <addaction name="actionEtudiants_redoublants_de_L_ISIMM"/>
+    <addaction name="actionEtudiants_redoublants_d_une_section_donn_e_2"/>
+    <addaction name="actionMoyennes_des_tudiants_d_une_section_donn_e"/>
+   </widget>
+   <widget class="QMenu" name="menuEnregisrement_et_R_cup_ration_des_fichiers">
+    <property name="title">
+     <string>Enregisrement et Récupération</string>
+    </property>
+    <addaction name="actionEnregistrement_fichier_ETUDIANTS"/>
+    <addaction name="actionR_cup_ration_fichier_ETUDIANTS"/>
+    <addaction name="actionEnregistrement_fichier_MATIERES"/>
+    <addaction name="actionR_cup_ration_fichier_Mati_res"/>
+    <addaction name="actionEnregistrement_fichier_Notes"/>
+    <addaction name="actionR_cup_ration_fichier_NOTES"/>
+   </widget>
+   <addaction name="menuGestion_des_etudiants"/>
+   <addaction name="menuGestion_des_mati_res"/>
+   <addaction name="menuGestion_des_notes"/>
+   <addaction name="menuCalcul_et_Affichage"/>
+   <addaction name="menuEnregisrement_et_R_cup_ration_des_fichiers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAjouter_etudiant">
+   <property name="text">
+    <string>Ajouter etudiant</string>
+   </property>
+  </action>
+  <action name="actionEtudiant_donne">
+   <property name="text">
+    <string>Etudiant donné</string>
+   </property>
+  </action>
+  <action name="actionD_une_section_donn_e">
+   <property name="text">
+    <string>D'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionD_un_niveau_donn">
+   <property name="text">
+    <string>D'un niveau donné</string>
+   </property>
+  </action>
+  <action name="actionD_une_section_et_un_niveau">
+   <property name="text">
+    <string>D'une section et un niveau</string>
+   </property>
+  </action>
+  <action name="actionT_l_phone">
+   <property name="text">
+    <string>Téléphone</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionAdresse">
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_tudiants">
+   <property name="text">
+    <string>Contenu du dictionnaire étudiants</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro">
+   <property name="text">
+    <string>Recherche par numéro inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_niveau">
+   <property name="text">
+    <string>Recherche par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_niveau">
+   <property name="text">
+    <string>Recherche par niveau</string>
+   </property>
+  </action>
+  <action name="actionAjouter_mati_re">
+   <property name="text">
+    <string>Ajouter une matière</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_mati_re">
+   <property name="text">
+    <string>Supprimer un matière</string>
+   </property>
+  </action>
+  <action name="actionNom">
+   <property name="text">
+    <string>Nom</string>
+   </property>
+  </action>
+  <action name="actionCoefficient">
+   <property name="text">
+    <string>Coefficient</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_mati_res">
+   <property name="text">
+    <string>Contenu du dictionnaire matières</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_code">
+   <property name="text">
+    <string>Recherche par code</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_2">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_semestre">
+   <property name="text">
+    <string>Recherche par section et semestre</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_note">
+   <property name="text">
+    <string>Ajouter une note</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_note">
+   <property name="text">
+    <string>Supprimer une note</string>
+   </property>
+  </action>
+  <action name="actionModifier_une_note">
+   <property name="text">
+    <string>Modifier une note</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_notes">
+   <property name="text">
+    <string>Contenu du dictionnaire notes</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_inscription">
+   <property name="text">
+    <string>Recherche par numéro inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_inscription_et_semestre">
+   <property name="text">
+    <string>Recherche par numéro inscription et semestre</string>
+   </property>
+  </action>
+  <action name="actionBulletin_de_note_d_un_tudiant">
+   <property name="text">
+    <string>Bulletin de note d'un étudiant</string>
+   </property>
+  </action>
+  <action name="actionBulletin_de_note_d_un_tudiant_par_semestre">
+   <property name="text">
+    <string>Bulletin de note d'un étudiant par semestre</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_admis_d_une_section_donn_e">
+   <property name="text">
+    <string>Etudiants admis d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_d_une_section_donn_e">
+   <property name="text">
+    <string>Etudiants redoublants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_admis_de_L_ISIMM">
+   <property name="text">
+    <string>Etudiants admis de L'ISIMM</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_de_L_ISIMM">
+   <property name="text">
+    <string>Etudiants redoublants de L'ISIMM</string>
+   </property>
+  </action>
+  <action name="actionEtudiants_redoublants_d_une_section_donn_e_2">
+   <property name="text">
+    <string>Etudiants redoublants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionMoyennes_des_tudiants_d_une_section_donn_e">
+   <property name="text">
+    <string>Moyennes des étudiants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_ETUDIANTS">
+   <property name="text">
+    <string>Enregistrement fichier ETUDIANTS</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_ETUDIANTS">
+   <property name="text">
+    <string>Récupération fichier ETUDIANTS</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_MATIERES">
+   <property name="text">
+    <string>Enregistrement fichier MATIERES</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_Mati_res">
+   <property name="text">
+    <string>Récupération fichier MATIERES</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_Notes">
+   <property name="text">
+    <string>Enregistrement fichier NOTES</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_NOTES">
+   <property name="text">
+    <string>Récupération fichier NOTES</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../img/back.qrc"/>
+ </resources>
+ <connections/>
+</ui>
